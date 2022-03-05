@@ -158,12 +158,11 @@ function startHtml() {
         </nav>
         <div class="container">
             <div class="row">`;
-    fs.writeFile("index.html", html, function(err) {
+    fs.writeFile('src/index.html', html, function(err) {
         if (err) {
             console.log(err);
         }
     });
-    console.log("start");
 }
 
 function addHtml(member) {
@@ -210,20 +209,13 @@ function addHtml(member) {
             </div>
         </div>`
         }
-        console.log("adding team member");
-        fs.appendFile("index.html", data, function (err) {
+        fs.appendFile('src/index.html', data, function (err) {
             if (err) {
                 return reject(err);
             };
             return resolve();
         });
     });
-    
-            
-    
-        
-    
-    
 }
 
 function finishHtml() {
@@ -232,12 +224,12 @@ function finishHtml() {
     
 </body>
 </html>`;
-fs.appendFile('index.html', html, function (err) {
+fs.appendFile('src/index.html', html, function (err) {
     if (err) {
         console.log(err);
     };
 });
-console.log("end");
+console.log("Your team is complete !");
 }
 
 teamTable();
