@@ -153,7 +153,7 @@ function startHtml() {
         <title>Team Profile</title>
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark mb-5">
+        <nav class="navbar navbar-dark bg-danger mb-5">
             <span class="navbar-brand mb-0 h1 w-100 text-center">Team Profile</span>
         </nav>
         <div class="container">
@@ -174,24 +174,24 @@ function addHtml(member) {
         let data = "";
         if (role === "Engineer") {
             const gitHub = member.getGithub();
-            data = `<div class="col-6">
-            <div class="card mx-auto mb-3" style="width: 18rem">
+            data = `<div class="col-6 ">
+            <div class="card mx-auto mb-3 bg-primary" style="width: 18rem ">
             <h5 class="card-header">${name}<br /><br />Engineer</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email Address: ${email}</li>
+                <li class="list-group-item text-primary">Email Address: ${email}</li>
                 <li class="list-group-item">GitHub: ${gitHub}</li>
             </ul>
             </div>
         </div>`;
         } else if (role === "Intern") {
             const school = member.getSchool();
-            data = `<div class="col-6">
-            <div class="card mx-auto mb-3" style="width: 18rem">
+            data = `<div class="col-6 ">
+            <div class="card mx-auto mb-3 bg-primary" style="width: 18rem">
             <h5 class="card-header">${name}<br /><br />Intern</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email Address: ${email}</li>
+                <li class="list-group-item text-primary">Email Address: ${email}</li>
                 <li class="list-group-item">School: ${school}</li>
             </ul>
             </div>
@@ -199,11 +199,11 @@ function addHtml(member) {
         } else {
             const officePhone = member.getOfficeNumber();
             data = `<div class="col-6">
-            <div class="card mx-auto mb-3" style="width: 18rem">
+            <div class="card mx-auto mb-3 bg-primary" style="width: 18rem">
             <h5 class="card-header">${name}<br /><br />Manager</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email Address: ${email}</li>
+                <li class="list-group-item text-primary">Email Address: ${email}</li>
                 <li class="list-group-item">Office Phone: ${officePhone}</li>
             </ul>
             </div>
