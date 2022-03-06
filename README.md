@@ -31,8 +31,8 @@
   The project will be tested on my terminal first and recorded on the screen to show the functionality. 
 
   ## Screenshot
-  - [screenshot](/src/img/display.jpg)
-  - [screenshot](/src/img/promt.jpg)
+  - ![screenshot](/src/img/display.jpg)
+  - ![screenshot](/src/img/promt.jpg)
 
 
 
